@@ -1,0 +1,222 @@
+<TipRackConfigurations>
+  <TipRackConfiguration type="PDT">
+    <TipRackConfiguration>
+      <TipItem>
+        <SyringeResource>PDT 10uL</SyringeResource>
+        <ArmResource>Arm - 10uL PDT</ArmResource>
+        <GravimetricResource />
+        <MultiTipResource />
+        <TipSize>10</TipSize>
+        <ToolSizeTag>10uLTip</ToolSizeTag>
+        <VialSubstrate>PDT Tool - 10/100uL</VialSubstrate>
+        <VialPosition>Deck Position</VialPosition>
+        <WellRow>1</WellRow>
+        <WellColumn>1</WellColumn>
+        <MinDispenseVolume>0</MinDispenseVolume>
+        <MaxDispenseVolume>10</MaxDispenseVolume>
+        <ExcessVolume>0</ExcessVolume>
+      </TipItem>
+      <TipItem>
+        <SyringeResource>PDT 100uL</SyringeResource>
+        <ArmResource>Arm - 100uL PDT</ArmResource>
+        <GravimetricResource />
+        <MultiTipResource />
+        <TipSize>100</TipSize>
+        <ToolSizeTag>100uLTip</ToolSizeTag>
+        <VialSubstrate>PDT Tool - 10/100uL</VialSubstrate>
+        <VialPosition>Deck Position</VialPosition>
+        <WellRow>1</WellRow>
+        <WellColumn>1</WellColumn>
+        <MinDispenseVolume>0</MinDispenseVolume>
+        <MaxDispenseVolume>100</MaxDispenseVolume>
+        <ExcessVolume>0</ExcessVolume>
+      </TipItem>
+      <TipItem>
+        <SyringeResource>PDT 1000uL</SyringeResource>
+        <ArmResource>Arm - 1000uL PDT</ArmResource>
+        <GravimetricResource />
+        <MultiTipResource />
+        <TipSize>1000</TipSize>
+        <ToolSizeTag>1000uLTip</ToolSizeTag>
+        <VialSubstrate>PDT Tool - 1000uL</VialSubstrate>
+        <VialPosition>Deck Position</VialPosition>
+        <WellRow>1</WellRow>
+        <WellColumn>1</WellColumn>
+        <MinDispenseVolume>0</MinDispenseVolume>
+        <MaxDispenseVolume>1000</MaxDispenseVolume>
+        <ExcessVolume>0</ExcessVolume>
+      </TipItem>
+      <TipItem>
+        <SyringeResource>PDT 10mL</SyringeResource>
+        <ArmResource>Arm - 10mL PDT</ArmResource>
+        <GravimetricResource />
+        <MultiTipResource />
+        <TipSize>10000</TipSize>
+        <ToolSizeTag>10mLTip</ToolSizeTag>
+        <VialSubstrate>Eppendorf PDT Tool</VialSubstrate>
+        <VialPosition>Deck Position</VialPosition>
+        <WellRow>1</WellRow>
+        <WellColumn>1</WellColumn>
+        <MinDispenseVolume>0</MinDispenseVolume>
+        <MaxDispenseVolume>10000</MaxDispenseVolume>
+        <ExcessVolume>0</ExcessVolume>
+      </TipItem>
+      <TipRackItem>
+        <Name>Off Deck 2-3 Tip Rack 1</Name>
+        <RackReplaceable>True</RackReplaceable>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 1</SubstratePosition>
+          <Name>Tip Rack 6x10 10uL PDT</Name>
+          <TipSize>10</TipSize>
+          <ToolSizeTag>10uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>16</RemainingTips>
+          <LastRow>5</LastRow>
+          <LastColumn>4</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 1</SubstratePosition>
+          <Name>Tip Rack 6x10 100uL PDT</Name>
+          <TipSize>100</TipSize>
+          <ToolSizeTag>100uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>56</RemainingTips>
+          <LastRow>0</LastRow>
+          <LastColumn>0</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 1</SubstratePosition>
+          <Name>Tip Rack 6x10 1000uL PDT</Name>
+          <TipSize>1000</TipSize>
+          <ToolSizeTag>1000uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>0</RemainingTips>
+          <LastRow>6</LastRow>
+          <LastColumn>10</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 1</SubstratePosition>
+          <Name>Tip Rack 3x4 10mL PDT - Eppendorf</Name>
+          <TipSize>10000</TipSize>
+          <ToolSizeTag>10mLTip</ToolSizeTag>
+          <PlateColumns>4</PlateColumns>
+          <PlateRows>3</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>3</RemainingTips>
+          <LastRow>3</LastRow>
+          <LastColumn>1</LastColumn>
+        </PlateItem>
+      </TipRackItem>
+      <TipRackItem>
+        <Name>Off Deck 2-3 Tip Rack 2</Name>
+        <RackReplaceable>True</RackReplaceable>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 2</SubstratePosition>
+          <Name>Tip Rack 6x10 10uL PDT</Name>
+          <TipSize>10</TipSize>
+          <ToolSizeTag>10uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>52</RemainingTips>
+          <LastRow>1</LastRow>
+          <LastColumn>8</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 2</SubstratePosition>
+          <Name>Tip Rack 6x10 100uL PDT</Name>
+          <TipSize>100</TipSize>
+          <ToolSizeTag>100uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>31</RemainingTips>
+          <LastRow>0</LastRow>
+          <LastColumn>0</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 2</SubstratePosition>
+          <Name>Tip Rack 6x10 1000uL PDT</Name>
+          <TipSize>1000</TipSize>
+          <ToolSizeTag>1000uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>13</RemainingTips>
+          <LastRow>5</LastRow>
+          <LastColumn>7</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 2</SubstratePosition>
+          <Name>Tip Rack 3x4 10mL PDT - Eppendorf</Name>
+          <TipSize>10000</TipSize>
+          <ToolSizeTag>10mLTip</ToolSizeTag>
+          <PlateColumns>4</PlateColumns>
+          <PlateRows>3</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>10</RemainingTips>
+          <LastRow>1</LastRow>
+          <LastColumn>2</LastColumn>
+        </PlateItem>
+      </TipRackItem>
+      <TipRackItem>
+        <Name>Off Deck 2-3 Tip Rack 3</Name>
+        <RackReplaceable>True</RackReplaceable>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 3</SubstratePosition>
+          <Name>Tip Rack 6x10 10uL PDT</Name>
+          <TipSize>10</TipSize>
+          <ToolSizeTag>10uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>56</RemainingTips>
+          <LastRow>0</LastRow>
+          <LastColumn>0</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 3</SubstratePosition>
+          <Name>Tip Rack 6x10 100uL PDT</Name>
+          <TipSize>100</TipSize>
+          <ToolSizeTag>100uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>0</RemainingTips>
+          <LastRow>0</LastRow>
+          <LastColumn>0</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 3</SubstratePosition>
+          <Name>Tip Rack 6x10 1000uL PDT</Name>
+          <TipSize>1000</TipSize>
+          <ToolSizeTag>1000uLTip</ToolSizeTag>
+          <PlateColumns>10</PlateColumns>
+          <PlateRows>6</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>24</RemainingTips>
+          <LastRow>4</LastRow>
+          <LastColumn>6</LastColumn>
+        </PlateItem>
+        <PlateItem>
+          <SubstratePosition>Off Deck 2-3 Tip Rack 3</SubstratePosition>
+          <Name>Tip Rack 3x4 10mL PDT - Eppendorf</Name>
+          <TipSize>10000</TipSize>
+          <ToolSizeTag>10mLTip</ToolSizeTag>
+          <PlateColumns>4</PlateColumns>
+          <PlateRows>3</PlateRows>
+          <IsCurrent>False</IsCurrent>
+          <RemainingTips>5</RemainingTips>
+          <LastRow>0</LastRow>
+          <LastColumn>0</LastColumn>
+        </PlateItem>
+      </TipRackItem>
+    </TipRackConfiguration>
+  </TipRackConfiguration>
+</TipRackConfigurations>
