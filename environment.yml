@@ -1,0 +1,15 @@
+name: dciedd
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python=3.10.16
+  - matplotlib
+  - scipy
+  - pandas
+  - numpy
+  - lxml
+  - pyyaml
+  - pythonnet
+  - pip:
+    - pythonnet
