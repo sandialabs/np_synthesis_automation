@@ -6,7 +6,20 @@ This code depends on the Library Studio and Automation Studio APIs by Unchained 
 
 `designmanager` depends on the Library Studio API. Copy its `Libs` and `SDK` directories into this repository's root directory
 
-`asmanager` depends on the Automation Studio API/SiLA Client.
+`asmanager` depends on the Automation Studio API/SiLA Client. From the sample SiLA client project provided by Unchained Labs, copy these directories/files into the `asmanager` directory:
+```
+AutomationStudio/
+AutomationStudioRemote/
+Dependencies/
+ExperimentService/
+ExperimentStatusService/
+Properties/
+RunService/
+ViewModels/
+ConsoleLogging.cs
+ServerDiscovery.cs
+ServerInfo.cs
+```
 
 ## Installation
 1. Clone this repo
@@ -21,12 +34,14 @@ conda env create -f environment.yml
 
 3. Open `designmanager/DesignManager.sln` and build the solution.
 
+4. Open `asmanager/SiLAClient.sln` and build the solution.
+
 ## Usage
-The following instructions describe how to generate an experiment definition from a template, save it to the database, and run it on the Big Kahuna. For more details, refer to TODO:
+The following instructions describe how to generate an experiment definition from a template, save it to the database, and run it on the Big Kahuna. For more details, refer to the [file details](#file-details)
 
 1. Ensure the experiment directory has the necessary files
-    1. Define experiment in design_template.yaml
-    2. Define changing variables in input.csv
+    1. Define experiment in `design_template.yaml`
+    2. Define changing variables in `input.csv`
     3. To create multiple designs from a single template, insert a type: split_design map in the maps to indicate where the previous design should end and a new one should begin
     4. Automation studio may require a well plate to have a vial with a non-zero volume before it can be drawn from. To work around this, define a dispense step into the plate and add Dummy to the list of that dispense step’s tags
 2. Generate input deck
@@ -46,3 +61,9 @@ The following instructions describe how to generate an experiment definition fro
     3. One or more design ids can be specified to run in sequence, but this expects a `.lsr`, `_cm.xml`, and `_prompts.xml` file for each specified id.
     4. Once the run is started, the status will be monitored and printed to console. This process can be killed with ctrl+c. This will not abort the run. To abort, manually do so in Automation Studio.
 
+## File details
+`design_template.yaml`: Defines the template for the experiment design. See `designmanager/test_input.yaml` for a sample of possible maps to execute. Templated maps are marked by `s1, s2, ... s#` rather than numerical values, indicating that the corresponding row and column from the `input.csv` will be used to populate the field.
+
+`input.csv`: Defines values for the parameters to populate the design template to create a completed experiment definition. This consists of columns that define dispense volums for relevant chemicals or stunner analysis parameters. Each row represents a single unique sample.
+
+TODO: sample problem
