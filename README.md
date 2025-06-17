@@ -36,6 +36,12 @@ conda env create -f environment.yml
 
 4. Open `asmanager/SiLAClient.sln` and build the solution.
 
+5. Create a `dependencies.yaml` file in the `execution` directory. Populate it with the paths to the built executables:
+```
+designmanager: <PATH TO DesignManager.exe (step 3)>
+silaclient: <PATH TO SiLAClient.dll (step 4)>
+```
+
 ## Usage
 The following instructions describe how to generate an experiment definition from a template, save it to the database, and run it on the Big Kahuna. For more details, refer to the [file details](#file-details)
 
@@ -66,4 +72,7 @@ The following instructions describe how to generate an experiment definition fro
 
 `input.csv`: Defines values for the parameters to populate the design template to create a completed experiment definition. This consists of columns that define dispense volums for relevant chemicals or stunner analysis parameters. Each row represents a single unique sample.
 
-TODO: sample problem
+An example of both files can be found in `examples/split_design`. This example can be used to generate and run an experiment using the [usage](#usage) instructions.
+
+## Citation
+TODO: put up a bibtex or something after publication

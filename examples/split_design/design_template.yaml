@@ -1,0 +1,483 @@
+# this is a comment
+
+design:
+  name: AR238
+  project: JDB
+
+chemicals:
+  - name: Glycolic acid solution
+    color: [0, 0, 255] # RGB
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 1
+    col: 1 # row 1, column 1 of deck 9-10 position 1
+    amount: 20
+    unit: ml
+    size: 20
+    capped: false
+
+  - name: Malic acid solution
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 1
+    col: 2 # row 1, column 1 of deck 9-10 position 1
+    amount: 17
+    unit: ml
+    size: 20
+    capped: false
+
+  - name: Citric acid solution
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 1
+    col: 3 # row 1, column 1 of deck 9-10 position 1
+    amount: 17
+    unit: ml
+    size: 20
+    capped: false
+
+  - name: Ascorbic acid solution
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 1
+    col: 4 # row 1, column 1 of deck 9-10 position 1
+    amount: 18
+    unit: ml
+    size: 20
+    capped: false
+
+  - name: Ascorb acid solution 2
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 2
+    col: 4 # row 1, column 1 of deck 9-10 position 1
+    amount: 18
+    unit: ml
+    size: 20
+    capped: false
+
+  - name: Sodium hydroxide solution
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 2
+    col: 1 # row 1, column 1 of deck 9-10 position 1
+    amount: 17
+    unit: ml
+    size: 20
+    capped: false
+
+  - name: Sodium borohydride solution
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 2
+    col: 2 # row 1, column 1 of deck 9-10 position 1
+    amount: 17
+    unit: ml
+    size: 20
+    capped: false
+
+  - name: Silver nitrate solution
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 1
+    row: 1
+    col: 1 # row 1, column 1 of deck 9-10 position 1
+    amount: 110
+    unit: ml
+    size: 125
+    capped: false
+
+  - name: AgNO3 solution
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 1
+    row: 1
+    col: 2 # row 1, column 1 of deck 9-10 position 1
+    amount: 110
+    unit: ml
+    size: 125
+    capped: false
+
+  - name: Water
+    color: [0, 255, 0]
+    type: deck
+    dispense_type: General PDT
+    tip: PDT
+    deck: 9-10
+    position: 2
+    row: 2
+    col: 3 # row 1, column 1 of deck 9-10 position 1
+    amount: 15
+    unit: ml
+    size: 20
+    capped: false
+
+libraries:
+  - name: AR238 plate 1
+    rows: 4
+    cols: 6
+    deck: 13-14
+    position: 1
+    size: 8
+    capped: false
+
+  - name: AR238 plate 2
+    rows: 4
+    cols: 6
+    deck: 13-14
+    position: 2
+    size: 8
+    capped: false
+
+  - name: AR238 stunner plate
+    rows: 8
+    cols: 12
+    deck: 11-12
+    position: 2
+    size: -1
+    capped: false
+
+maps:
+  # maps are executed in order
+
+  - type: stir
+    library: AR238 plate 1
+    value: 600
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Glycolic acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ml
+    split: false # set to true to split up each dispense step into an individual map, set to false to keep as a single map
+    map: [s1, s2, s3, s4, s5, s6,
+          s7, s8, s9, s10, s11, s12,
+          s13, s14, s15, s16, s17, s18,
+          s19, s20, s21, s22, s23, s24]
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Malic acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ml
+    split: false
+    map: [s1, s2, s3, s4, s5, s6,
+          s7, s8, s9, s10, s11, s12,
+          s13, s14, s15, s16, s17, s18,
+          s19, s20, s21, s22, s23, s24]
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Citric acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ml
+    split: false
+    map: [s1, s2, s3, s4, s5, s6,
+          s7, s8, s9, s10, s11, s12,
+          s13, s14, s15, s16, s17, s18,
+          s19, s20, s21, s22, s23, s24]
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Ascorbic acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ul
+    split: false
+    map: [370, 370, 370, 370, 370, 370,
+          370, 370, 370, 370, 370, 370,
+          370, 370, 370, 370, 370, 370,
+          370, 370, 370, 370, 370, 370]
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Sodium hydroxide solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ul
+    split: false
+    map: [150, 150, 150, 150, 150, 150,
+          150, 150, 150, 150, 150, 150,
+          150, 150, 150, 150, 150, 150,
+          150, 150, 150, 150, 150, 150]
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Sodium borohydride solution
+    tags: [PDT,1000uLTip,SourceTracking]
+    unit: ml
+    split: false
+    map: [s1, s2, s3, s4, s5, s6,
+          s7, s8, s9, s10, s11, s12,
+          s13, s14, s15, s16, s17, s18,
+          s19, s20, s21, s22, s23, s24]
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Silver nitrate solution
+    tags: [PDT,10mLTip,SourceTracking,StartReactionTimer]
+    unit: ml
+    split: false
+    map: [4.2, 4.2, 4.2, 4.2, 4.2, 4.2,
+          4.2, 4.2, 4.2, 4.2, 4.2, 4.2,
+          4.2, 4.2, 4.2, 4.2, 4.2, 4.2,
+          4.2, 4.2, 4.2, 4.2, 4.2, 4.2]
+
+
+################################
+# begin plate 2
+################################
+
+  - type: stir
+    library: AR238 plate 2
+    value: 600
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: Glycolic acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ml
+    split: false # set to true to split up each dispense step into an individual map, set to false to keep as a single map
+    map: [s25, s26, s27, s28, s29, s30,
+          s31, s32, s33, s34, s35, s36,
+          s37, s38, s39, s40, s41, s42,
+          s43, s44, s45, s46, s47, s48]
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: Malic acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ml
+    split: false
+    map: [s25, s26, s27, s28, s29, s30,
+          s31, s32, s33, s34, s35, s36,
+          s37, s38, s39, s40, s41, s42,
+          s43, s44, s45, s46, s47, s48]
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: Citric acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ml
+    split: false
+    map: [s25, s26, s27, s28, s29, s30,
+          s31, s32, s33, s34, s35, s36,
+          s37, s38, s39, s40, s41, s42,
+          s43, s44, s45, s46, s47, s48]
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: Ascorb acid solution 2
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ul
+    split: false
+    map: [370, 370, 370, 370, 370, 370,
+          370, 370, 370, 370, 370, 370,
+          370, 370, 370, 370, 370, 370,
+          370, 370, 370, 370, 370, 370]
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: Sodium hydroxide solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip]
+    unit: ul
+    split: false
+    map: [150, 150, 150, 150, 150, 150,
+          150, 150, 150, 150, 150, 150,
+          150, 150, 150, 150, 150, 150,
+          150, 150, 150, 150, 150, 150]
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: Sodium borohydride solution
+    tags: [PDT,1000uLTip,SourceTracking]
+    unit: ml
+    split: false
+    map: [s25, s26, s27, s28, s29, s30,
+          s31, s32, s33, s34, s35, s36,
+          s37, s38, s39, s40, s41, s42,
+          s43, s44, s45, s46, s47, s48]
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: AgNO3 solution
+    tags: [PDT,10mLTip,SourceTracking,StartReactionTimer]
+    unit: ml
+    split: false
+    map: [4.2, 4.2, 4.2, 4.2, 4.2, 4.2,
+          4.2, 4.2, 4.2, 4.2, 4.2, 4.2,
+          4.2, 4.2, 4.2, 4.2, 4.2, 4.2,
+          4.2, 4.2, 4.2, 4.2, 4.2, 4.2]
+
+  - type: timer
+    library: AR238 plate 2
+    value: 120
+
+  - type: wait
+    library: AR238 plate 2
+
+  - type: end_reaction_timer
+    library: AR238 plate 2
+
+  - type: stir
+    library: AR238 plate 1
+    value: 0
+
+  - type: stir
+    library: AR238 plate 2
+    value: 0
+
+###########################################
+# split
+###########################################
+
+  - type: split_design
+
+  - type: dispense
+    library: AR238 plate 1
+    chemical: Glycolic acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip,Dummy]
+    unit: ml
+    split: false # set to true to split up each dispense step into an individual map, set to false to keep as a single map
+    map: [s1, s2, s3, s4, s5, s6,
+          s7, s8, s9, s10, s11, s12,
+          s13, s14, s15, s16, s17, s18,
+          s19, s20, s21, s22, s23, s24]
+
+  - type: dispense
+    library: AR238 plate 2
+    chemical: Glycolic acid solution
+    tags: [PDT,1000uLTip,SourceTracking,LookAhead,ReuseTip,Dummy]
+    unit: ml
+    split: false # set to true to split up each dispense step into an individual map, set to false to keep as a single map
+    map: [s25, s26, s27, s28, s29, s30,
+          s31, s32, s33, s34, s35, s36,
+          s37, s38, s39, s40, s41, s42,
+          s43, s44, s45, s46, s47, s48]
+
+  - type: array
+    library: AR238 stunner plate
+    source: AR238 plate 1
+    tags: [PDT,10uLTip,ReuseTip]
+    unit: ul
+    split: false
+    source_start: [1, 1]
+    source_end: [4, 6]
+    dest_start: [1, 1]
+    dest_end: [4, 6]
+    map: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
+          2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
+          2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
+          2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+
+  - type: array
+    library: AR238 stunner plate
+    source: AR238 plate 2
+    tags: [PDT,10uLTip,ReuseTip]
+    unit: ul
+    split: false
+    source_start: [1, 1]
+    source_end: [4, 6]
+    dest_start: [5, 1]
+    dest_end: [8, 6]
+    map: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
+          2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
+          2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
+          2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+
+  - type: stunner_application
+    library: AR238 stunner plate
+    map: [protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null,
+          protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null,
+          protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null,
+          protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null,
+          protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null,
+          protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null,
+          protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null,
+          protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, protein (turbidity) + sizing, null, null, null, null, null, null]
+
+  - type: stunner_sample_type
+    library: AR238 stunner plate
+    map: [s1, s2, s3, s4, s5, s6, null, null, null, null, null, null,
+          s7, s8, s9, s10, s11, s12, null, null, null, null, null, null,
+          s13, s14, s15, s16, s17, s18, null, null, null, null, null, null,
+          s19, s20, s21, s22, s23, s24, null, null, null, null, null, null,
+          s25, s26, s27, s28, s29, s30, null, null, null, null, null, null,
+          s31, s32, s33, s34, s35, s36, null, null, null, null, null, null,
+          s37, s38, s39, s40, s41, s42, null, null, null, null, null, null,
+          s43, s44, s45, s46, s47, s48, null, null, null, null, null, null]
+
+  - type: stunner_sample_group
+    library: AR238 stunner plate
+    map: [SG1, SG1, SG1, SG1, SG1, SG1, null, null, null, null, null, null,
+          SG1, SG1, SG1, SG1, SG1, SG1, null, null, null, null, null, null,
+          SG1, SG1, SG1, SG1, SG1, SG1, null, null, null, null, null, null,
+          SG1, SG1, SG1, SG1, SG1, SG1, null, null, null, null, null, null,
+          SG2, SG2, SG2, SG2, SG2, SG2, null, null, null, null, null, null,
+          SG2, SG2, SG2, SG2, SG2, SG2, null, null, null, null, null, null,
+          SG2, SG2, SG2, SG2, SG2, SG2, null, null, null, null, null, null,
+          SG2, SG2, SG2, SG2, SG2, SG2, null, null, null, null, null, null]
+
+  - type: stunner_analyte_name
+    library: AR238 stunner plate
+    map: [test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null,
+          test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null,
+          test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null,
+          test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null,
+          test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null,
+          test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null,
+          test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null,
+          test NP, test NP, test NP, test NP, test NP, test NP, null, null, null, null, null, null]
+
+  - type: stunner_buffer_name
+    library: AR238 stunner plate
+    map: [Water, Water, Water, Water, Water, Water, null, null, null, null, null, null,
+          Water, Water, Water, Water, Water, Water, null, null, null, null, null, null,
+          Water, Water, Water, Water, Water, Water, null, null, null, null, null, null,
+          Water, Water, Water, Water, Water, Water, null, null, null, null, null, null,
+          Water, Water, Water, Water, Water, Water, null, null, null, null, null, null,
+          Water, Water, Water, Water, Water, Water, null, null, null, null, null, null,
+          Water, Water, Water, Water, Water, Water, null, null, null, null, null, null,
+          Water, Water, Water, Water, Water, Water, null, null, null, null, null, null]
+
+  - type: start_stunner
+    library: AR238 stunner plate
+    map: [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+          1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+          1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+          1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+          1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+          1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+          1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,
+          1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
