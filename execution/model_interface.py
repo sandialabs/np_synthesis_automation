@@ -29,14 +29,6 @@ class ModelInterface:
         if (not os.path.isdir(self.campaign_results_dir)):
             os.mkdir(self.campaign_results_dir)
 
-        try:
-            with open(os.path.join(self.campaign_dir, 'params.yaml'), 'r') as stream:
-                self.params = yaml.safe_load(stream)
-        except FileNotFoundError as ex:
-            print("The campaign directory does not contain the required params.yaml file")
-            raise ex
-        self.params['Folder Name'] = self.exp_dir
-
         self.design_manager_exe = dependencies['designmanager']
 
         self.template_pattern = re.compile("s[0-9]+")
