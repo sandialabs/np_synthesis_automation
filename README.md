@@ -1,5 +1,5 @@
-# Insert title here
-TODO: description
+# Nanoparticle Synthesis Automation
+This repository contains the code associated with the experiments described in the publication: <TODO: insert paper name>. These include libraries for interacting with Unchained Labs' Big Kahuna and Stunner lab automation machines as well as scripts to template, define, and run synthesis and characterization experiments on these machines.
 
 ## Dependencies
 This code depends on the Library Studio and Automation Studio APIs by Unchained Labs. Contact them for access and instructions for installing.
