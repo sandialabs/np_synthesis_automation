@@ -24,7 +24,7 @@ ServerInfo.cs
 ## Installation
 1. Clone this repo
 ```
-git clone TODO: url
+git clone https://github.com/sandialabs/np_synthesis_automation.git
 ```
 
 2. Use the provided conda environment definition `environment.yml` to build the conda environment:
